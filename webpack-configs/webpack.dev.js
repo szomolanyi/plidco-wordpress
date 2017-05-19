@@ -6,9 +6,9 @@ const join              = require('path').join
 
 const proxyConfig = {
   "target": {
-    "host": "localhost",
+    "host": "wordpress",
     "protocol": 'http:',
-    "port": 8888
+    "port": 80
   },
   ignorePath: false,
   changeOrigin: true,
