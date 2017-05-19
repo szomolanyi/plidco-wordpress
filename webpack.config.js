@@ -3,7 +3,7 @@ const autoprefixer      = require('autoprefixer')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const WriteFilePlugin   = require('write-file-webpack-plugin')
 
-const THEME_NAME        = 'awesome-theme'
+const THEME_NAME        = 'plidco-theme'
 exports.THEME_NAME      = THEME_NAME
 
 
