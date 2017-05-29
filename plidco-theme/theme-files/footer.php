@@ -12,48 +12,86 @@
 
 		</div><!-- .site-content -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php if ( has_nav_menu( 'primary' ) ) : ?>
-				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'menu_class'     => 'primary-menu',
-						 ) );
-					?>
-				</nav><!-- .main-navigation -->
-			<?php endif; ?>
+    <footer>
 
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
-				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'social',
-							'menu_class'     => 'social-links-menu',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>',
-						) );
-					?>
-				</nav><!-- .social-navigation -->
-			<?php endif; ?>
+        <nav class="foot-nav table1">
+            <table>
 
-			<div class="site-info">
-				<?php
-					/**
-					 * Fires before the twentysixteen footer text for footer customization.
-					 *
-					 * @since Twenty Sixteen 1.0
-					 */
-					do_action( 'twentysixteen_credits' );
-				?>
-				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- .site-footer -->
-	</div><!-- .site-inner -->
+                <tr>
+                    <td><a href="http://www.youtube.com/user/PipelineRepair" target="_blank"><img src="http://plidco.com/modules/default/resources/images/youtube-large.jpg"></a></td>
+                    <td><a href="http://www.facebook.com/pages/PLIDCO-The-Pipe-Line-Development-Company/132720888658" target="_blank"><img src="http://plidco.com/modules/default/resources/images/facebook-large.jpg"></a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="http://www.linkedin.com/profile/view?id=12914254&authType=name&authToken=67Lq&trk=tyah" target="_blank"><img src="http://plidco.com/modules/default/resources/images/linkedin-large.jpg"></a></td>
+                    <td><a href="http://www.pipelinerepairandsafety.com/" target="_blank"><img src="http://plidco.com/modules/default/resources/images/blog-large.png"></a></td>
+                </tr>
+
+
+            </table>
+        </nav>
+
+        <nav class="foot-nav">
+
+            <a href="/product-line">Products</a>
+            <a href="/contact">Contact</a>
+            <a href="/distributor-locator">Find Distributor Locator</a>
+            <a href="/about-plidco">About</a>
+            <a href="/custom-services">Custom Services</a>
+
+        </nav>
+
+        <nav class="foot-nav">
+
+            <a href="/request-quote">Request Quote</a>
+            <a href="/request-catalog">Catalog</a>
+            <a href="/datasheets">Data Sheets</a>
+            <a href="/employment">Employment</a>
+    	    <a href="/slideshow">Slide Show</a>
+
+
+        </nav>
+
+        <nav class="foot-nav">
+
+            <a href="/login">Login</a>
+            <a href="">Phone</a>
+            <a href="/news">News</a>
+            <a href="http://www.pipelinerepairandsafety.com/">Blog</a>
+
+
+        </nav>
+
+
+        <nav class="foot-nav icon-wrapper">
+            <div class="footer-img-wrapper">
+                <table class="table2">
+
+                    <tr>
+                        <td><a href="http://www.youtube.com/user/PipelineRepair" target="_blank"> <img src="http://plidco.com/modules/default/resources/images/youtube-large.jpg"></a>
+                        </td>
+                        <td><a href="http://www.facebook.com/pages/PLIDCO-The-Pipe-Line-Development-Company/132720888658" target="_blank"> <img
+                                    src="http://plidco.com/modules/default/resources/images/facebook-large.jpg"></a></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="http://www.linkedin.com/profile/view?id=12914254&authType=name&authToken=67Lq&trk=tyah" target="_blank"> <img
+                                    src="http://plidco.com/modules/default/resources/images/linkedin-large.jpg"></a></td>
+                        <td><a href="http://www.pipelinerepairandsafety.com/" target="_blank"> <img src="http://plidco.com/modules/default/resources/images/blog-large.png"></a>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+                <a href="/modules/default/resources/pdfs/iso-certificates.pdf"><img src="http://plidco.com/modules/default/resources/images/iso-logo.jpg"></a>
+            </div>
+        </nav>
+
+    </footer>
+
+  </div><!-- .site-inner -->
 </div><!-- .site -->
-
 <?php wp_footer(); ?>
-</body>
-</html>
+    </body>
+    </html>
